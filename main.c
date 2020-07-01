@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 			strncat(cmd_str, dir_str, 2);
 			strcat(cmd_str, " & cd ");
 			strcat(cmd_str, dir_str);
-			strcat(cmd_str, "waifu2x-caffe_1.2.0.3 & start waifu2x-caffe-cui.exe -m noise -n 3 -p gpu -e png -i ");
+			strcat(cmd_str, "waifu2x-caffe_1.2.0.3 & start waifu2x-caffe-cui.exe -m noise_scale -n 3 -w 3840 -h 2160 -p gpu -e png -i ");
 			strcat(cmd_str, argv[i]);
 			strcat(cmd_str, " -o ");
 			char path_str[255] = "";
